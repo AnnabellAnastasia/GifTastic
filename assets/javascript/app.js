@@ -6,7 +6,7 @@ var topics = ["Maltese Dog", "Bichon Frise", "Greyhound", "French Buldog", "Gold
 function displayTopicInfo() {
     var topic = $(this).attr("data-name");
     console.log(topic);
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=s2t6sbYfPlLNJYFH83IkH3GqJFT7dG08&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=s2t6sbYfPlLNJYFH83IkH3GqJFT7dG08&limit=10";
 
     $.ajax({
         url: queryURL,
