@@ -43,8 +43,13 @@ function renderButtons() {
     }
 }
 renderButtons();
-$("#add-topic").on("click", function (event) {
+
+$("#add-breed").on("click", function (event) {
     event.preventDefault();
+    var topic = $("#breed-input").val().trim();
+    topics.push(topic);
+    renderButtons();
+
 });
 $(document).on("click", ".topic-btn", displayTopicInfo);
   
